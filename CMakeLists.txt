@@ -1,0 +1,69 @@
+cmake_minimum_required(VERSION 3.14)
+project(VWG)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(abstract)
+include_directories(interface)
+include_directories(objetscomplexes)
+include_directories(primitives)
+include_directories(svg)
+include_directories(util)
+
+add_executable(VWG
+        abstract/environnement.cpp
+        abstract/environnement.h
+        abstract/formes.cpp
+        abstract/formes.h
+        interface/astre.cpp
+        interface/astre.h
+        interface/plantes.cpp
+        interface/plantes.h
+        objetscomplexes/arbre.cpp
+        objetscomplexes/arbre.h
+        objetscomplexes/champignon.cpp
+        objetscomplexes/champignon.h
+        objetscomplexes/ciel.cpp
+        objetscomplexes/ciel.h
+        objetscomplexes/colline.cpp
+        objetscomplexes/colline.h
+        objetscomplexes/etoile.cpp
+        objetscomplexes/etoile.h
+        objetscomplexes/fleur.cpp
+        objetscomplexes/fleur.h
+        objetscomplexes/herbe.cpp
+        objetscomplexes/herbe.h
+        objetscomplexes/lune.cpp
+        objetscomplexes/lune.h
+        objetscomplexes/montagne.cpp
+        objetscomplexes/montagne.h
+        objetscomplexes/nuage.cpp
+        objetscomplexes/nuage.h
+        objetscomplexes/plan.cpp
+        objetscomplexes/plan.h
+        objetscomplexes/sol.cpp
+        objetscomplexes/sol.h
+        objetscomplexes/soleil.cpp
+        objetscomplexes/soleil.h
+        primitives/cercle.cpp
+        primitives/cercle.h
+        primitives/ellipse.cpp
+        primitives/ellipse.h
+        primitives/rectangle.cpp
+        primitives/rectangle.h
+        primitives/triangle.cpp
+        primitives/triangle.h
+        svg/coords.cpp
+        svg/coords.h
+        svg/couleur.cpp
+        svg/couleur.h
+        svg/svgfile.cpp
+        svg/svgfile.h
+        util/util.cpp
+        util/util.h
+        heure.cpp
+        heure.h
+        interface.cpp
+        interface.h
+        main.cpp)
