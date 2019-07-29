@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="vector_wallpaper_generator"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_wallpaper_generator">
+				<Option output="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/vector_wallpaper_generator.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/."/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/abstract"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/interface"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/svg"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/util"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++/mingw32"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 vector_wallpaper_generator"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_wallpaper_generator/fast">
+				<Option output="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/vector_wallpaper_generator.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/."/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/abstract"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/interface"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/svg"/>
+					<Add directory="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/util"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++/mingw32"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 vector_wallpaper_generator/fast"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/abstract/environnement.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/abstract/environnement.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/abstract/formes.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/abstract/formes.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/extensions/heure.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/extensions/heure.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/interface/astre.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/interface/astre.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/interface/interface.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/interface/interface.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/interface/plantes.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/interface/plantes.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/main.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/arbre.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/arbre.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/champignon.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/champignon.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/ciel.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/ciel.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/colline.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/colline.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/etoile.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/etoile.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/fleur.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/fleur.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/herbe.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/herbe.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/lune.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/lune.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/montagne.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/montagne.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/nuage.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/nuage.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/plan.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/plan.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/sol.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/sol.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/soleil.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/objetscomplexes/soleil.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives/cercle.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives/cercle.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives/ellipse.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives/ellipse.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives/rectangle.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives/rectangle.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives/triangle.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/primitives/triangle.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/svg/coords.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/svg/coords.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/svg/couleur.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/svg/couleur.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/svg/svgfile.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/svg/svgfile.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/util/mingw.thread.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/util/util.cpp">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/util/util.h">
+			<Option target="vector_wallpaper_generator"/>
+		</Unit>
+		<Unit filename="C:/Users/Ben/Desktop/VWG/vector-wallpaper-generator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

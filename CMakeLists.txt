@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(VWG)
+project(vector_wallpaper_generator)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -11,7 +11,7 @@ include_directories(primitives)
 include_directories(svg)
 include_directories(util)
 
-add_executable(VWG
+add_executable(vector_wallpaper_generator
         abstract/environnement.cpp
         abstract/environnement.h
         abstract/formes.cpp
@@ -60,10 +60,11 @@ add_executable(VWG
         svg/couleur.h
         svg/svgfile.cpp
         svg/svgfile.h
+        util/mingw.thread.h
         util/util.cpp
         util/util.h
-        heure.cpp
-        heure.h
-        interface.cpp
-        interface.h
+        extensions/heure.cpp
+        extensions/heure.h
+        interface/interface.cpp
+        interface/interface.h
         main.cpp)
