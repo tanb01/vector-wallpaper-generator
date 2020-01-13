@@ -23,7 +23,7 @@ class Svgfile
 
     public:
 
-        Svgfile(std::string _filename = "wallpaper.svg", int _width=1366, int _height=768);//1000x800
+        Svgfile(std::string _filename = "../wallpaper.svg", int _width=1366, int _height=768);//1000x800
         ~Svgfile();
 
         void addDisk(double x, double y, double r, std::string color=defcol, double opacite=1);//, std::string f=defcol);
