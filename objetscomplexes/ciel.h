@@ -7,26 +7,25 @@
 ///Classe dérivée d'Environnment instanciable
 ///Les classes virtuelles pures déclarées dans Environnement sont implémentées dans le .cpp de la classe
 ///Ciel est composée de la classe Rectangle
-class Ciel: public Environnement
-{
-public:
-    ///Méthodes : Déclaration
-    Ciel(std::mt19937& rg);
+class Ciel : public Environnement {
+ public:
+  ///Méthodes : Déclaration
+  Ciel(std::mt19937 &rg);
 
-    virtual void afficher() const;
-    virtual void dessiner(Svgfile& svgout);
+  virtual void afficher() const;
+  virtual void dessiner(Svgfile &svgout);
 
-    virtual void Translater(double coeff);
-    virtual void TranslaterX(double consta);
-    virtual void TranslaterY(double consta);
+  virtual void Translater(double coeff);
+  virtual void TranslaterX(double consta);
+  virtual void TranslaterY(double consta);
 
-    virtual void VarColFonc(Heure &heure);
+  virtual void VarColFonc(Heure &heure);
 
-    ~Ciel();
+  ~Ciel();
 
-    ///Attributs : Déclaration
-private:
-    Rectangle m_ciel;
+  ///Attributs : Déclaration
+ private:
+  Rectangle m_ciel;
 };
 
 #endif // CIEL_H_INCLUDED

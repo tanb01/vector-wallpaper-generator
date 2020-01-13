@@ -6,29 +6,28 @@
 
 /// Déclaration d'un type "Lune" qui hérite de la classe "Astre"
 ///Lune est composée de la classe Cercle
-class Lune: public Astre
-{
-    ///Methodes : déclaration
-public:
-    Lune(std::mt19937& rg);
+class Lune : public Astre {
+  ///Methodes : déclaration
+ public:
+  Lune(std::mt19937 &rg);
 
-    virtual void afficher() const;
-    virtual void dessiner(Svgfile& svgout);
+  virtual void afficher() const;
+  virtual void dessiner(Svgfile &svgout);
 
-    virtual void Translater(double coeff);
-    virtual void TranslaterX(double consta);
-    virtual void TranslaterY(double consta);
+  virtual void Translater(double coeff);
+  virtual void TranslaterX(double consta);
+  virtual void TranslaterY(double consta);
 
-    virtual void Zoom(double const);
+  virtual void Zoom(double const);
 
-    virtual void VarColFonc(Heure& heure);
+  virtual void VarColFonc(Heure &heure);
 
-    ~Lune();
+  ~Lune();
 
-    /// Attributs : déclaration
-private:
-    Cercle m_lune;
-    Cercle m_croissant;
+  /// Attributs : déclaration
+ private:
+  Cercle m_lune;
+  Cercle m_croissant;
 };
 
 #endif // LUNE_H_INCLUDED

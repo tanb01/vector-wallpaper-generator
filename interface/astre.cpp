@@ -4,6 +4,5 @@
 ///Attention forme non instanciable seulement par le biais de ses classes filles
 
 Astre::Astre(Coords coords)
-    : Environnement{coords}
-{}
+    : Environnement{coords} {}
 

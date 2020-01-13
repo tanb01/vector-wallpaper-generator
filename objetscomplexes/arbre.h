@@ -9,31 +9,30 @@
 ///Les classes virtuelles pures déclarées dans Environnement sont implémentées dans le .cpp de la classe
 ///Arbre est composée de la classe Triangle et Cercle
 
-class Arbre: public Plantes
-{
-    ///Méthodes : déclaration
-public:
-    Arbre(std::mt19937& rg);
+class Arbre : public Plantes {
+  ///Méthodes : déclaration
+ public:
+  Arbre(std::mt19937 &rg);
 
-    void afficher() const;
-    void dessiner(Svgfile& svgout);
+  void afficher() const;
+  void dessiner(Svgfile &svgout);
 
-    virtual void Translater(double coeff);
-    virtual void TranslaterX(double consta);
-    virtual void TranslaterY(double consta);
+  virtual void Translater(double coeff);
+  virtual void TranslaterX(double consta);
+  virtual void TranslaterY(double consta);
 
-    virtual void Zoom(double coeff);
+  virtual void Zoom(double coeff);
 
-    virtual void VarColFonc(Heure& heure);
+  virtual void VarColFonc(Heure &heure);
 
-    ~Arbre();
+  ~Arbre();
 
-    ///Attributs : déclaration
-private:
-    Triangle m_tronc;
-    Triangle m_otronc;
-    Cercle m_feuilles;
-    Cercle m_ofeuilles;
+  ///Attributs : déclaration
+ private:
+  Triangle m_tronc;
+  Triangle m_otronc;
+  Cercle m_feuilles;
+  Cercle m_ofeuilles;
 };
 
 #endif // ARBRE_H_INCLUDED

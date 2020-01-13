@@ -13,33 +13,32 @@
 
 ///fais aussi hériter les méthodes de translation, les accesseurs et mutateurs des classes Couleur et Coords
 /// qui sont les mêmes pour toutes les classes filles
-class Formes
-{
-    ///Méthodes : déclaration
-public:
-    Formes(Coords coords, Couleur couleur={0,0,0});
-    virtual ~Formes() = default;
+class Formes {
+  ///Méthodes : déclaration
+ public:
+  Formes(Coords coords, Couleur couleur = {0, 0, 0});
+  virtual ~Formes() = default;
 
-    virtual void afficher()const = 0;
-    virtual void dessiner(Svgfile& svgout)=0;
+  virtual void afficher() const = 0;
+  virtual void dessiner(Svgfile &svgout) = 0;
 
-    virtual void Translater(double coeff);
-    virtual void TranslaterX(double consta);
-    virtual void TranslaterY(double consta);
+  virtual void Translater(double coeff);
+  virtual void TranslaterX(double consta);
+  virtual void TranslaterY(double consta);
 
-    virtual void Zoom(double coeff)=0;
+  virtual void Zoom(double coeff) = 0;
 
-    Coords getCoords() const;
-    void setCoords(Coords coords);
+  Coords getCoords() const;
+  void setCoords(Coords coords);
 
-    virtual Couleur getCouleur() const;
+  virtual Couleur getCouleur() const;
 
-    virtual void setCouleur(Couleur couleur);
+  virtual void setCouleur(Couleur couleur);
 
-    ///Attributs : déclaration
-protected:
-    Coords m_coords;
-    Couleur m_couleur;
+  ///Attributs : déclaration
+ protected:
+  Coords m_coords;
+  Couleur m_couleur;
 };
 
 #endif // FORMES_H_INCLUDED
