@@ -9,11 +9,10 @@
 ///fais aussi hériter les méthodes de translation qui sont les mêmes pour toutes les classes filles
 ///et a pour méthodes virtuelles pures
 
-class Astre: public Environnement
-{
-    ///Methodes : déclaration
-public:
-    Astre(Coords coords);
+class Astre : public Environnement {
+  ///Methodes : déclaration
+ public:
+  Astre(Coords coords);
 };
 
 #endif // ASTRE_H_INCLUDED

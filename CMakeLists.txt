@@ -1,17 +1,17 @@
 cmake_minimum_required(VERSION 3.14)
-project(VWG)
+project(vector_wallpaper_generator)
 
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 include_directories(abstract)
 include_directories(interface)
-include_directories(objetscomplexes)
+include_directories(objets-complexes)
 include_directories(primitives)
 include_directories(svg)
 include_directories(util)
 
-add_executable(VWG
+add_executable(vector_wallpaper_generator
         abstract/environnement.cpp
         abstract/environnement.h
         abstract/formes.cpp
@@ -20,32 +20,32 @@ add_executable(VWG
         interface/astre.h
         interface/plantes.cpp
         interface/plantes.h
-        objetscomplexes/arbre.cpp
-        objetscomplexes/arbre.h
-        objetscomplexes/champignon.cpp
-        objetscomplexes/champignon.h
-        objetscomplexes/ciel.cpp
-        objetscomplexes/ciel.h
-        objetscomplexes/colline.cpp
-        objetscomplexes/colline.h
-        objetscomplexes/etoile.cpp
-        objetscomplexes/etoile.h
-        objetscomplexes/fleur.cpp
-        objetscomplexes/fleur.h
-        objetscomplexes/herbe.cpp
-        objetscomplexes/herbe.h
-        objetscomplexes/lune.cpp
-        objetscomplexes/lune.h
-        objetscomplexes/montagne.cpp
-        objetscomplexes/montagne.h
-        objetscomplexes/nuage.cpp
-        objetscomplexes/nuage.h
-        objetscomplexes/plan.cpp
-        objetscomplexes/plan.h
-        objetscomplexes/sol.cpp
-        objetscomplexes/sol.h
-        objetscomplexes/soleil.cpp
-        objetscomplexes/soleil.h
+        objets-complexes/arbre.cpp
+        objets-complexes/arbre.h
+        objets-complexes/champignon.cpp
+        objets-complexes/champignon.h
+        objets-complexes/ciel.cpp
+        objets-complexes/ciel.h
+        objets-complexes/colline.cpp
+        objets-complexes/colline.h
+        objets-complexes/etoile.cpp
+        objets-complexes/etoile.h
+        objets-complexes/fleur.cpp
+        objets-complexes/fleur.h
+        objets-complexes/herbe.cpp
+        objets-complexes/herbe.h
+        objets-complexes/lune.cpp
+        objets-complexes/lune.h
+        objets-complexes/montagne.cpp
+        objets-complexes/montagne.h
+        objets-complexes/nuage.cpp
+        objets-complexes/nuage.h
+        objets-complexes/plan.cpp
+        objets-complexes/plan.h
+        objets-complexes/sol.cpp
+        objets-complexes/sol.h
+        objets-complexes/soleil.cpp
+        objets-complexes/soleil.h
         primitives/cercle.cpp
         primitives/cercle.h
         primitives/ellipse.cpp
@@ -60,10 +60,11 @@ add_executable(VWG
         svg/couleur.h
         svg/svgfile.cpp
         svg/svgfile.h
+        util/mingw.thread.h
         util/util.cpp
         util/util.h
-        heure.cpp
-        heure.h
-        interface.cpp
-        interface.h
+        extensions/heure.cpp
+        extensions/heure.h
+        interface/interface.cpp
+        interface/interface.h
         main.cpp)

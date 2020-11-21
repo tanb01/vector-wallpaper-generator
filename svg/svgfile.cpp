@@ -19,33 +19,30 @@ extern const std::string svgLinearGradients;
 std::set<std::string> Svgfile::s_openfiles;
 
 Svgfile::Svgfile(std::string _filename, int _width, int _height) :
-    m_filename{_filename}, m_width{_width}, m_height{_height}
-{
+    m_filename{_filename}, m_width{_width}, m_height{_height} {
 
     std::cout << "Opening SVG output file : "
               << m_filename << std::endl;
 
-    if ( s_openfiles.count(m_filename) )
-        throw std::runtime_error( "File " + m_filename + " already open !" );
+    if (s_openfiles.count(m_filename))
+        throw std::runtime_error("File " + m_filename + " already open !");
 
     m_ostrm.open(m_filename);
     s_openfiles.insert(m_filename);
 
-    if (!m_ostrm)
-    {
+    if (!m_ostrm) {
         std::cout << "Problem opening " << m_filename << std::endl;
-        throw std::runtime_error("Could not open file " + m_filename );
+        throw std::runtime_error("Could not open file " + m_filename);
     }
 
-    std::cout << "OK" << std::endl<< std::endl;
+    std::cout << "OK" << std::endl << std::endl;
 
     // Writing the header into the SVG file
     m_ostrm << svgHeader;
     m_ostrm << "width=\"" << m_width << "\" height=\"" << m_height << "\">\n\n";
 }
 
-Svgfile::~Svgfile()
-{
+Svgfile::~Svgfile() {
     // Writing the gradients into the SVG file
     m_ostrm << svgBallGradients;
     ///BONUS
@@ -64,8 +61,7 @@ Svgfile::~Svgfile()
 
 // Helper templated function
 template<typename T>
-std::string attrib(std::string name, T val)
-{
+std::string attrib(std::string name, T val) {
     std::ostringstream oss;
     oss << name << "=\"" << val << "\" ";
     return oss.str();
@@ -76,54 +72,49 @@ void Svgfile::addDisk(double x, double y, double r, std::string color, double op
     m_ostrm << "<circle "
             << attrib("cx", x)
             << attrib("cy", y)
-            << attrib("r",  r)
+            << attrib("r", r)
             << attrib("fill", fillBallColor(color))
-            << attrib("fill-opacity", opacite )
+            << attrib("fill-opacity", opacite)
             //<< attrib("filter", f )
             << "/>\n";
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-void Svgfile::addEllipse(double x, double y, double rx, double ry, std::string color, double opacite)
-{
+void Svgfile::addEllipse(double x, double y, double rx, double ry, std::string color, double opacite) {
     m_ostrm << "<ellipse "
             << attrib("cx", x)
             << attrib("cy", y)
             << attrib("rx", rx)
-            << attrib("ry",  ry)
-            << attrib("fill", fillBallColor(color) )
-            << attrib("fill-opacity", opacite )
+            << attrib("ry", ry)
+            << attrib("fill", fillBallColor(color))
+            << attrib("fill-opacity", opacite)
             << "/>\n";
 }
 
-void Svgfile::addPolygon(std::vector<Coords> mypoints, std::string color, double opacite)
-{
+void Svgfile::addPolygon(std::vector<Coords> mypoints, std::string color, double opacite) {
     std::ostringstream strs;
-    for (size_t i=0; i<mypoints.size(); ++i)
-    {
-        strs << mypoints[i].getX() << "," << mypoints[i].getY()  << " ";
+    for (size_t i = 0; i < mypoints.size(); ++i) {
+        strs << mypoints[i].getX() << "," << mypoints[i].getY() << " ";
     }
     std::string str = strs.str();
     m_ostrm << "<polygon "
             << attrib("points", str)
             << attrib("fill", color)
-            << attrib("fill-opacity", opacite )
+            << attrib("fill-opacity", opacite)
             << "/>\n";
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-void Svgfile::addRectangle(double x, double y, double width, double height, std::string color, double opacite)
-{
+void Svgfile::addRectangle(double x, double y, double width, double height, std::string color, double opacite) {
     m_ostrm << "<rect "
             << attrib("x", x)
             << attrib("y", y)
             << attrib("width", width)
             << attrib("height", height)
             << attrib("fill", color)
-            << attrib("fill-opacity", opacite )
+            << attrib("fill-opacity", opacite)
             << "/>\n";
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-void Svgfile::addLine(double x1, double y1, double x2, double y2, std::string color)
-{
+void Svgfile::addLine(double x1, double y1, double x2, double y2, std::string color) {
     m_ostrm << "<line "
             << attrib("x1", x1)
             << attrib("y1", y1)
@@ -133,14 +124,12 @@ void Svgfile::addLine(double x1, double y1, double x2, double y2, std::string co
             << "/>\n";
 }
 
-void Svgfile::addCross(double x, double y, double span, std::string color)
-{
-    addLine(x-span, y-span, x+span, y+span, color);
-    addLine(x-span, y+span, x+span, y-span, color);
+void Svgfile::addCross(double x, double y, double span, std::string color) {
+    addLine(x - span, y - span, x + span, y + span, color);
+    addLine(x - span, y + span, x + span, y - span, color);
 }
 
-void Svgfile::addText(double x, double y, std::string text, std::string color)
-{
+void Svgfile::addText(double x, double y, std::string text, std::string color) {
     /// <text x="180" y="60">Un texte</text>
     m_ostrm << "<text "
             << attrib("x", x)
@@ -149,45 +138,39 @@ void Svgfile::addText(double x, double y, std::string text, std::string color)
             << ">" << text << "</text>\n";
 }
 
-void Svgfile::addText(double x, double y, double val, std::string color)
-{
+void Svgfile::addText(double x, double y, double val, std::string color) {
     std::ostringstream oss;
     oss << val;
     addText(x, y, oss.str(), color);
 }
 
-void Svgfile::addGrid(double span, bool numbering, std::string color)
-{
-    double y=0;
-    while (y<=m_height)
-    {
+void Svgfile::addGrid(double span, bool numbering, std::string color) {
+    double y = 0;
+    while (y <= m_height) {
         addLine(0, y, m_width, y, color);
         if (numbering)
-            addText(5, y-5, y, color);
-        y+=span;
+            addText(5, y - 5, y, color);
+        y += span;
     }
 
-    double x=0;
-    while (x<=m_width)
-    {
+    double x = 0;
+    while (x <= m_width) {
         addLine(x, 0, x, m_height, color);
         if (numbering)
-            addText(x+5, 15, x, color);
-        x+=span;
+            addText(x + 5, 15, x, color);
+        x += span;
     }
 }
 
-std::string makeRGB(int r, int g, int b)
-{
+std::string makeRGB(int r, int g, int b) {
     std::ostringstream oss;
     oss << "rgb(" << r << "," << g << "," << b << ")";
     return oss.str();
 }
 
-std::string fillBallColor(std::string col)
-{
-    if ( col.size()>4 && col.substr(col.size()-4) == "ball" )
-        col =   "url(#" + col + ")";
+std::string fillBallColor(std::string col) {
+    if (col.size() > 4 && col.substr(col.size() - 4) == "ball")
+        col = "url(#" + col + ")";
 
     return col;
 }
