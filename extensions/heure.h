@@ -2,7 +2,7 @@
 #define HEURE_H_INCLUDED
 
 #include <iostream>
-#include "util/util.h"
+#include "../util/util.h"
 
 class Heure {
   ///Méthodes : Déclaration

@@ -5,7 +5,7 @@
 #include <vector>
 #include <ctime>
 #include <algorithm>
-#include "interface.h"
+#include "./interface/interface.h"
 
 ///Menu permettant l'utilisateur de:
 ///Dessiner un paysage, Creer un paysage,

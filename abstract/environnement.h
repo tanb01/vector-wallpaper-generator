@@ -3,7 +3,7 @@
 
 #include "../svg/coords.h"
 #include "../svg/svgfile.h"
-#include "extensions/heure.h"
+#include "../extensions/heure.h"
 
 ///Est composé de la classe Coords, elle l'a fait hériter en protected
 ///Ces coordonnées sont les coordonnées principales de l'objet
